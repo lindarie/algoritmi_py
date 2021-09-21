@@ -7,13 +7,15 @@ Programma izveidota: 2021/09/20
 a = 1
 while (a == 1):
     num = int(input("Ievadi skaitli: "))
-    sum = int(0)
+    sum = int(0) #summas un n(skaits) atskaites punkts sākas no 0
     n = int(0)
-    while (num > 0):
-        digit = int(num % 10)
-        num = int(num / 10)
-        sum = sum + digit
-        n = n + 1
+
+    while (num > 0): #ievadītajam skaitlim jābūt pozitīvam
+        digit = int(num % 10) #definē pēdējo ciparu
+        num = int(num / 10) 
+        sum = sum + digit #kopējā ciparu summa (atskaites summa + pēdējais cipars)
+        n = n + 1 #kopējais n(skaits)
+
     if (n > 0): result = sum / n
     print("Vidējais aritmētiskais: ", result)
     a = int(input("Vai turpināt (1) vai beigt (0)? "))
