@@ -15,8 +15,8 @@ while (a == 1):
         num = int(num / 10) 
         sum = sum + digit #kopējā ciparu summa (atskaites summa + pēdējais cipars)
         n = n + 1 #kopējais n(skaits)
-
     if (n > 0): result = sum / n
+    elif (num == 0):  result = 0;
     print("Vidējais aritmētiskais: ", result)
     a = int(input("Vai turpināt (1) vai beigt (0)? "))
 else: print("Paldies")
@@ -24,11 +24,15 @@ else: print("Paldies")
 
 
 '''
-| Datu ievade |  Vēlamā reakcija | Rezultāts C++ | Rezultāts Python             | Vai pareizi? |
-|-------------|------------------|---------------|------------------------------|--------------|
-| 126         | 3                | 3             | 3.0                          | +            |
-| 127         | 3.33(3)          | 3.33333       | 3.3333333333333335           | +            |
-| 9           | 9                | 9             | 9.0                          | +            |
-| 0           | 0                | 0             | name 'result' is not defined | -            |
++-------------+------------------+---------------+--------------------+--------------+
+| Datu ievade |  Vēlamā reakcija | Rezultāts C++ | Rezultāts Python   | Vai pareizi? |
++-------------+------------------+---------------+--------------------+--------------+
+| 126         | 3                | 3             | 3.0                | +            |
+| 127         | 3.33(3)          | 3.33333       | 3.3333333333333335 | +            |
+| 9           | 9                | 9             | 9.0                | +            |
+| 0           | 0                | 0             | 0                  | +            |
+| 000         | 0                | 0             | 0                  | +            |
++-------------+------------------+---------------+--------------------+--------------+
+
 '''
 
